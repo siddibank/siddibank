@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>BEAUTIFUL LOGIN PAGE</title>
+      <img onload="starTime()">
+      <header id="txt"></header>
+      <script>function starTime(){
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m)
+        s = checkTime(s)
+        document.getElementById('txt').innerHTML=h + ":" + m + ":" + s;
+         setTimeout(starTime,1000);
+        }
+        function checkTime(i){
+          if (i<10) {i="0"+i}; //add zero in front of numbers < 10
+           return i;
+        }
+      </script>
+      <link rel="stylesheet" href="bankole.css">
+  <nav>
+      <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+   </nav>
+    <div> <a href="menu.html"></a></div>
+    <div> <a href="menu.html"></a></div>
+    <div> <a href="menu.html"></a></div>
+  <br>
+  <h5>OPENING= 7:00am<br>
+     CLOSING= 5:00pm</h5>
+<h3>motto: IN GOD WE TRUST</h3>
+<img src="block.jpeg">
+<img src="cement.jpeg">
+<img src="ring.jpeg">
+<img src="sand.jpeg">
+
+</head>
+</body>
+</html>
